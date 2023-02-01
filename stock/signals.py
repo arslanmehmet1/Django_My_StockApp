@@ -4,7 +4,7 @@ from django.dispatch import receiver
 from .models import Purchases, Sales, Product
 
 
-@receiver(post_save, sender=Purchases)
-def create_Purchases(sender, instance=None, created=False, **kwargs):
-    if created:
-        Product.objects.create(user=instance)
+# @receiver(post_save, sender=Purchases)
+# def create_Purchases(sender, instance=None, created=False, **kwargs):
+#     if created:
+#         Product.objects.create(user=instance)
